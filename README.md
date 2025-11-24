@@ -61,9 +61,9 @@ The project goals were centered around **deterministic results**, identifying pr
 This approach uses **Firecrawl** to handle the difficult, non-deterministic task of cleaning and structuring website content, and then feeds the high-quality content into **Ollama** for analysis.
 
   * **Firecrawl's Crawl Endpoint**: Used to recursively search and find URLs matching a pattern like `domain.com/products/.+`, and returns clean JSON content.
-  * **The Trade-off**: Firecrawl ensures **deterministic results** (a key requirement) and provides the highest success rate of correct product names. This outweighs the financial cost (free credit limit) and the non-deterministic nature of the Ollama-generated keywords, which can afford some variation.
+  * **The Trade-off**: Firecrawl ensures **deterministic results** (a key requirement) and provides the highest success rate of correct product names. This outweighs the financial cost (free credit limit).
 
-> **Decision Summary:** **Firecrawl API** was chosen for **deterministic product name extraction**, and **Ollama** was chosen for **keyword generation** because the variation in keywords is acceptable.
+> **Decision Summary:** **Firecrawl API** was chosen for **deterministic product name & description extraction**, and **Ollama** was chosen for **keyword generation** because the variation in keywords is acceptable because we get multiple keywords per product name.
 
 -----
 
