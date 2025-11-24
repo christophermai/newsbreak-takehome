@@ -1,0 +1,25 @@
+{
+  "name": "product-landing-page-crawler",
+  "version": "2.0.0",
+  "description": "Web crawler with LLM-based product extraction using Ollama",
+  "main": "crawler.js",
+  "type": "module",
+  "scripts": {
+    "start": "node crawler.js",
+    "crawl": "node crawler.js"
+  },
+  "keywords": [
+    "web-crawler",
+    "scraper",
+    "product-extraction",
+    "llm",
+    "ollama"
+  ],
+  "author": "Christopher Mai",
+  "license": "MIT",
+  "dependencies": {
+    "@mendable/firecrawl-js": "^4.6.2",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
