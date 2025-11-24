@@ -1,7 +1,7 @@
 {
   "name": "product-landing-page-crawler",
   "version": "2.0.0",
-  "description": "Web crawler with LLM-based product extraction using Ollama",
+  "description": "Web crawler with LLM-based product extraction using firecrawl and Ollama",
   "main": "crawler.js",
   "type": "module",
   "scripts": {
