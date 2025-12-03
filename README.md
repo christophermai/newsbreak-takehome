@@ -17,19 +17,12 @@ An intelligent Node.js web crawler designed to find and extract multiple product
 
 ## 🏗️ Architecture
 
-The project's architecture is divided into two primary approaches for content acquisition:
+The project's architecture is as follows
 
-### Approach 1 (Chosen: Firecrawl for Data, Ollama for Analysis)
+### Firecrawl for Data, Ollama for Analysis)
 
 ```
 URL → Fetch domain content (Firecrawl Crawl API) → Extract Product Names → Send names/description to LLM (Ollama, axios) to generate keywords
-  → Parse JSON Response → CSV Output
-```
-
-### Approach 2 (Alternative: Direct Crawling/Scraping with Ollama)
-
-```
-URL → Fetch HTML (axios) → Extract Content (cheerio) → Send raw content to LLM (Ollama)
   → Parse JSON Response → CSV Output
 ```
 
@@ -182,7 +175,7 @@ The current Ollama model struggles to extract titles from these complex, article
 
   * **`axios`**: HTTP client for making API calls to Ollama and other services.
   * **`cheerio`**: HTML parsing library used in Approach 2.
-  * **`firecrawl`**: Web crawling/scraping API for fetching clean, structured domain data (Approach 1).
+  * **`firecrawl`**: Web crawling/scraping API for fetching clean, structured domain data (Approach 3).
   * **`Ollama`**: Local LLM runtime (external dependency).
 
 -----
